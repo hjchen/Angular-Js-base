@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/foundation.min.css" rel="stylesheet">
+</head>
+<body ng-app="app">
+<div ng-controller="AddressCtrl">
+    <div>地址管理</div>
+    <ul class="ui-list ui-list-link ui-list-text ui-list-active ui-border-tb">
+        <li ng-repeat="item in list" class="ui-border-t" ng-class="{'selected':$last}">
+            <h4>{{$index+item.address+$first+" "+$last}}</h4>
+        </li>
+    </ul>
+</div>
+<script src="js/angular.min.js"></script>
+<script src="js/myctrl5.js"></script>
+</body>
+</html>

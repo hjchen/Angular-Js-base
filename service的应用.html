@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/foundation.min.css" rel="stylesheet">
+</head>
+<body ng-app="app">
+<div ng-controller="FCtrl">
+    <input type="text" ng-model="data.msg">
+    <h1>{{data.msg}}</h1>
+</div>
+<div ng-controller="SCtrl">
+    <input type="text" ng-model="data.msg">
+    <h1>{{data.msg}}</h1>
+</div>
+<script src="js/angular.min.js"></script>
+<script src="js/myctrl4.js"></script>
+</body>
+</html>
